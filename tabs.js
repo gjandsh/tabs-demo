@@ -1,4 +1,5 @@
 window.tabs = function(element){
+  console.log('tabs') 
   var $tabs = $(element)
   let selector = 'ol[data-role="nav"]>li'
   $tabs.on('click',selector,e=>{
