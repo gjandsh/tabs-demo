@@ -2,7 +2,7 @@ window.tabs = function(element){
   console.log('tabs') 
   var $tabs = $(element)
   let selector = 'ol[data-role="nav"]>li'
-  $tabs.onclick=console.log(e.target)
+  $tabs.onclick=function(){console.log(e.target)}
   selector.onclick=function(){console.log('click')}
   $tabs.on('click',selector,e=>{
     console.log('click')
