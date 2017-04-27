@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>tabs demo</title>
+</head>
+<body>
+  <style src='./style.css'></style>
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  <div class="wrapper">
+    <div class="tabs">
+      <ol data-role="nav">
+        <!--在此处设置两个li，分别为两个tab的导航-->
+        <li class='active'>tab-navigtor1</li>
+        <li>tab-navigtor2</li>
+      </ol>
+      <ol data-role="panes">
+        <!--在此处设置两个li，分别为两个tab显示的内容-->
+        <li class='active'>
+          <div class="content">
+            content1
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            content2
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
