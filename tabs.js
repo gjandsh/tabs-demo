@@ -2,7 +2,6 @@ window.tabs = function(element){
   var $tabs = $(element)
   let selector = 'ol[data-role="nav"]>li'
   $tabs.on('click',selector,e=>{
-      console.log('click')
     let $li = $(e.currentTarget)
     let index = $li.index()
     $li.addClass('active').siblings().removeClass('active')
