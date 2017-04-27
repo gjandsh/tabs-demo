@@ -10,9 +10,9 @@ window.tabs = function(element){
     let index = $li.index()
     //给被点击的li元素添加class'active',把li的兄弟的'active'class移除
     $li.addClass('active').siblings().removeClass('active')
-    //给li最近的祖先元素中标记为'data-role="nav"'的ol元素的
-    //兄弟元素中被标记为'data-role="pane"'的ol元素中
-    //索引与被点击的li元素一致的li子元素添加class'active'
+    /*给li最近的祖先元素中标记为'data-role="nav"'的ol元素的
+    兄弟元素中被标记为'data-role="pane"'的ol元素中
+    索引与被点击的li元素一致的li子元素添加class'active'*/
     $li.closest('ol[data-role="nav"]').siblings('ol[data-role="panes"]').
     find('li').eq(index).addClass('active')
     .siblings().removeClass('active')
